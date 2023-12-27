@@ -9,7 +9,6 @@
 </head>
 <body>
     <div class="square">
-        <!-- Add anchor tags with href attributes for redirection -->
         <a href="./login.html">
             <button class="button" id="button1">Log-In</button>
         </a>
@@ -17,5 +16,28 @@
             <button class="button" id="button2">Sign-Up</button>
         </a>
     </div>
+
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.2.0/firebase-firestore.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            // Replace with your Firebase project config
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_AUTH_DOMAIN",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_STORAGE_BUCKET",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Include your other scripts -->
+    <script src="script.js" defer></script>
 </body>
 </html>
