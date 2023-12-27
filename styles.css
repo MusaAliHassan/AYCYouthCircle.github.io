@@ -1,0 +1,43 @@
+body {
+    background-color: #252525;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.square {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #111111;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button {
+    font-family: 'Edifice', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+	width: 105px;
+	height: 39px;
+    background-color: #009aee; /* Green color for buttons, you can change this */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#button1 {
+    /* Additional styling for button 1 if needed */
+}
+
+#button2 {
+    /* Additional styling for button 2 if needed */
